@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio | Aetherial Code</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+       <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="icon" href="assets/icons/logo.svg">
+</head>
+<body>
+    <div class="loading-spinner"><div class="spinner"></div></div>
+    <div class="blob-container"><div class="blob blob-1"></div><div class="blob blob-2"></div></div>
+
+    <header class="main-header glass-panel">
+        <nav class="container">
+            <a href="index.html" class="logo"> <img src="assets/icons/logo.svg" height="50" width="50" alt="Aetherial Code Logo"></a>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="portfolio.html" class="active">Portfolio</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                 <li><a href="careers.html">Careers</a></li>
+            </ul>
+            <!-- <a href="contact.html" class="btn btn-glow">Get a Quote</a> -->
+            <button class="hamburger"><span></span><span></span><span></span></button>
+        </nav>
+    </header>
+
+    <main>
+        <section class="page-hero">
+            <div class="container">
+                <h1 class="page-title">Our Work</h1>
+                <p class="page-subtitle">A selection of projects that showcase our passion for technology and design.</p>
+            </div>
+        </section>
+
+        <section class="section-padding">
+            <div class="container">
+                <div class="portfolio-filters">
+                    <button class="filter-btn active" data-filter="*">All</button>
+                    <button class="filter-btn" data-filter=".web">Web Apps</button>
+                    <button class="filter-btn" data-filter=".mobile">Mobile Apps</button>
+                    <button class="filter-btn" data-filter=".ui-ux">UI/UX</button>
+                </div>
+
+                <div class="portfolio-grid">
+                    <div class="portfolio-item web"><img src="assets/images/project-1.jpg" alt="Project 1"><div class="portfolio-overlay"><h3>Project Nova</h3><p>Fintech Platform</p><a href="#" class="btn btn-secondary">View Case Study</a></div></div>
+                    <div class="portfolio-item mobile"><img src="assets/images/project-2.jpg" alt="Project 2"><div class="portfolio-overlay"><h3>Zenith Mobile</h3><p>Health & Wellness App</p><a href="#" class="btn btn-secondary">View Case Study</a></div></div>
+                    <div class="portfolio-item ui-ux"><img src="assets/images/project-3.jpg" alt="Project 3"><div class="portfolio-overlay"><h3>ConnectSphere</h3><p>Social Networking API</p><a href="#" class="btn btn-secondary">View Case Study</a></div></div>
+                    <div class="portfolio-item web"><img src="assets/images/project-4.jpg" alt="Project 4"><div class="portfolio-overlay"><h3>DataViz Dashboard</h3><p>Data Analytics</p><a href="#" class="btn btn-secondary">View Case Study</a></div></div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section-padding" style="background-color: rgba(0,0,0,0.2);">
+            <div class="container">
+                 <h2 class="section-title">Trusted By Leading Companies</h2>
+                 <div class="tech-stack-grid">
+                    <img src="assets/images/client-logo-1.svg" alt="Client Logo 1" class="client-logo">
+                    <img src="assets/images/client-logo-2.svg" alt="Client Logo 2" class="client-logo">
+                    <img src="assets/images/client-logo-3.svg" alt="Client Logo 3" class="client-logo">
+                    <img src="assets/images/client-logo-4.svg" alt="Client Logo 4" class="client-logo">
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="main-footer">
+        <!-- Footer code is identical to index.html -->
+    </footer>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+    <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
+    <script src="assets/js/script.js"></script>
+</body>
+</html>

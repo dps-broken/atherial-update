@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Careers | Aetherial Code</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    
+       <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="icon" href="assets/icons/logo.svg">
+</head>
+<body>
+
+    <div class="loading-spinner"><div class="spinner"></div></div>
+    <div class="blob-container"><div class="blob blob-1"></div><div class="blob blob-2"></div></div>
+
+    <header class="main-header glass-panel">
+        <nav class="container">
+            <a href="index.html" class="logo"> <img src="assets/icons/logo.svg" height="50" width="50" alt="Aetherial Code Logo"></a>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="careers.html" class="active">Careers</a></li>
+            </ul>
+            <!-- <a href="contact.html" class="btn btn-glow">Get a Quote</a> -->
+            <button class="hamburger"><span></span><span></span><span></span></button>
+        </nav>
+    </header>
+
+    <main>
+        <section class="page-hero">
+            <div class="container">
+                <h1 class="page-title">Join Our Mission</h1>
+                <p class="page-subtitle">We're building the future of technology. Be a part of a team that values innovation, growth, and collaboration.</p>
+            </div>
+        </section>
+
+        <section class="section-padding">
+            <div class="container">
+                <h2 class="section-title">Life at Aetherial Code</h2>
+                <div class="grid-3">
+                    <div class="feature-card glass-panel">
+                        <img src="assets/icons/icon-growth.svg" class="card-icon" alt="Growth Icon">
+                        <h3>Career Growth</h3>
+                        <p>We invest in our team's development with continuous learning opportunities and clear career paths.</p>
+                    </div>
+                    <div class="feature-card glass-panel">
+                        <img src="assets/icons/icon-innovation.svg" class="card-icon" alt="Innovation Icon">
+                        <h3>Innovative Projects</h3>
+                        <p>Work on challenging and rewarding projects with cutting-edge technologies that make a real impact.</p>
+                    </div>
+                    <div class="feature-card glass-panel">
+                        <img src="assets/icons/icon-culture.svg" class="card-icon" alt="Culture Icon">
+                        <h3>Inclusive Culture</h3>
+                        <p>We foster a supportive and collaborative environment where every voice is heard and valued.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section-padding" id="openings" style="background-color: rgba(0,0,0,0.2);">
+            <div class="container">
+                <h2 class="section-title">Current Openings</h2>
+                <div class="job-listings-container">
+                    <div class="job-listing glass-panel">
+                        <div class="job-info">
+                            <h3>Senior Frontend Developer (React)</h3>
+                            <p><span>Remote</span> | <span>Full-time</span></p>
+                        </div>
+                        <button class="btn btn-secondary apply-btn" data-job-title="Senior Frontend Developer (React)">Apply Now</button>
+                    </div>
+                    <div class="job-listing glass-panel">
+                        <div class="job-info">
+                            <h3>Lead DevOps Engineer</h3>
+                            <p><span>San Francisco, CA</span> | <span>Full-time</span></p>
+                        </div>
+                        <button class="btn btn-secondary apply-btn" data-job-title="Lead DevOps Engineer">Apply Now</button>
+                    </div>
+                     <div class="job-listing glass-panel">
+                        <div class="job-info">
+                            <h3>Product Manager</h3>
+                             <p><span>Remote</span> | <span>Full-time</span></p>
+                        </div>
+                        <button class="btn btn-secondary apply-btn" data-job-title="Product Manager">Apply Now</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section-padding" id="internships">
+            <div class="container">
+                <h2 class="section-title">Internship Program</h2>
+                <div class="internship-intro text-center">
+                    <p class="page-subtitle" style="max-width: 800px;">Kickstart your career in tech. Our internship program is designed to provide students and recent graduates with hands-on experience, mentorship from industry experts, and the opportunity to contribute to real projects.</p>
+                </div>
+
+                <div class="internship-details-card glass-panel">
+                    <div class="grid-2-col">
+                        <div class="internship-info">
+                            <h3>Now Accepting Applications for Fall 2025</h3>
+                            <p>We are looking for passionate learners to join us as interns in the following domains:</p>
+                            <ul>
+                                <li>✓ Frontend Development (React, Vue.js)</li>
+                                <li>✓ Backend Development (Node.js, Python)</li>
+                                <li>✓ UI/UX Design (Figma)</li>
+                                <li>✓ Cloud Engineering (AWS, Docker)</li>
+                            </ul>
+                            <h4>What We Offer:</h4>
+                            <p>Direct mentorship, participation in the full development lifecycle, a collaborative environment, and a pathway to a full-time position.</p>
+                            <button class="btn btn-glow apply-btn" data-job-title="Internship Program">Apply for Internship</button>
+                        </div>
+                        <div class="internship-image">
+                            <img src="assets/images/internship-program.jpg" alt="Interns collaborating at Aetherial Code">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <div class="modal-overlay" id="application-modal">
+        <div class="modal-content glass-panel">
+            <button class="modal-close-btn">&times;</button>
+            <h3 id="modal-job-title">Apply for Position</h3>
+            <p>Fill out the form below to submit your application.</p>
+            <form class="contact-form" id="application-form">
+                
+                <div class="form-row">
+                    <div class="form-group"><label for="fullName">Full Name</label><input type="text" id="fullName" name="fullName" class="form-input" required></div>
+                    <div class="form-group"><label for="email">Email Address</label><input type="email" id="email" name="email" class="form-input" required></div>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group"><label for="mobileNumber">Mobile Number</label><input type="tel" id="mobileNumber" name="mobileNumber" class="form-input" required></div>
+                    <div class="form-group"><label for="collegeName">College/University</label><input type="text" id="collegeName" name="collegeName" class="form-input" required></div>
+                </div>
+                
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="positionTitle">Applying for</label>
+                        <select id="positionTitle" name="positionTitle" class="form-input" required>
+                            <option value="">Select Position...</option>
+                            </select>
+                    </div>
+                     <div class="form-group"><label for="address">City, State (Optional)</label><input type="text" id="address" name="address" class="form-input"></div>
+                </div>
+
+                <div class="form-group"><label for="skills">Skills (e.g., React, Node.js)</label><input type="text" id="skills" name="skills" class="form-input" required></div>
+                
+                <div class="form-group"><label for="resumeUrl">Link to Resume (Google Drive, etc.)</label><input type="url" id="resumeUrl" name="resumeUrl" class="form-input" required></div>
+                
+                <div class="form-group"><label for="coverLetter">Cover Letter (Optional)</label><textarea id="coverLetter" name="coverLetter" class="form-input" rows="4"></textarea></div>
+
+                <button type="submit" class="btn btn-glow" id="submit-btn">Submit Application</button>
+            </form>
+        </div>
+    </div>
+    <footer class="main-footer">
+        </footer>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+    <script src="assets/js/script.js"></script>
+    <script src="assets/js/careers.js"></script>
+</body>
+</html>
