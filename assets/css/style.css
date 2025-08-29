@@ -785,6 +785,24 @@ img {
     color: rgba(240, 240, 240, 0.7);
 }
 
+.footer-col-img {
+    display: flex;
+    
+    li{
+        
+        img{
+            height: 100px;
+        }
+    }
+    li:first-child{
+        img{
+            height: 120px;
+        }
+    }
+
+}
+
+
 .newsletter-form {
     display: flex;
     flex-direction: column;
