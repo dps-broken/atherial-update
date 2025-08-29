@@ -198,6 +198,13 @@ img {
     font-weight: bold;
 }
 
+.nav-login-btn{
+    display: flex;
+    list-style: none;
+}
+
+
+
 .nav-links {
     display: flex;
     list-style: none;
@@ -222,7 +229,7 @@ img {
 }
 
 .nav-links a:hover::after,
-.nav-links a.active::after {
+.nav-links a.active::after{
     width: 100%;
 }
 
@@ -263,6 +270,7 @@ img {
 .btn-glow:hover {
     transform: translateY(-3px);
     box-shadow: 0 0 15px var(--color-primary), 0 0 25px var(--color-secondary);
+    color: #294044;
 }
 
 .btn-secondary {
