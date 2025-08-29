@@ -787,6 +787,7 @@ img {
 
 .footer-col-img {
     display: flex;
+    justify-content: center;
     
     li{
         
