@@ -1,0 +1,35 @@
+# robots.txt for Aetherial Code
+# Allow all major search engines to index important pages
+
+User-agent: *
+Allow: /
+Disallow: /assets/        # CSS, JS, icons folder (already linked separately)
+Disallow: /admin/         # If you have admin panel, hide it
+Disallow: /private/       # Any confidential folder
+Disallow: /tmp/           # Temporary files
+
+# Sitemap (important for SEO)
+Sitemap: https://www.aetherialcode.com/sitemap.xml
+
+# Crawl-delay (optional, if server load issue)
+# Crawl-delay: 10
+
+# Specific Bots
+User-agent: Googlebot
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+User-agent: Slurp
+Allow: /
+
+User-agent: DuckDuckBot
+Allow: /
+
+User-agent: Baiduspider
+Disallow: /                # Block Chinese bot (optional if no target)
+
+# Prevent duplicate content
+User-agent: *
+Disallow: /?*              # Block URL parameters
