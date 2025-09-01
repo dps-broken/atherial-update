@@ -1,20 +1,26 @@
 # robots.txt for Aetherial Code
-# Allow all major search engines to index important pages
+# Optimized for SEO, crawl efficiency & content protection
 
+# Global Rules
 User-agent: *
 Allow: /
-Disallow: /assets/        # CSS, JS, icons folder (already linked separately)
-Disallow: /admin/         # If you have admin panel, hide it
-Disallow: /private/       # Any confidential folder
-Disallow: /tmp/           # Temporary files
 
-# Sitemap (important for SEO)
+# Disallow non-essential or duplicate content
+Disallow: /assets/          # Static assets (CSS, JS, icons handled via CDN)
+Disallow: /admin/           # Admin panel (restricted access)
+Disallow: /private/         # Confidential resources
+Disallow: /tmp/             # Temporary files or logs
+Disallow: /cgi-bin/         # Legacy server scripts
+Disallow: /*?*              # Block URL parameters to avoid duplicate content
+Disallow: /*.php$           # Prevent direct PHP file indexing (if any)
+
+# Sitemap (critical for SEO indexing)
 Sitemap: https://www.aetherialcode.com/sitemap.xml
 
-# Crawl-delay (optional, if server load issue)
+# Crawl-delay (optional, use only if server load issues occur)
 # Crawl-delay: 10
 
-# Specific Bots
+# Major Search Engines
 User-agent: Googlebot
 Allow: /
 
@@ -27,9 +33,20 @@ Allow: /
 User-agent: DuckDuckBot
 Allow: /
 
+# Block unwanted or low-value crawlers
 User-agent: Baiduspider
-Disallow: /                # Block Chinese bot (optional if no target)
+Disallow: /                 # No Chinese audience, block crawl
 
-# Prevent duplicate content
-User-agent: *
-Disallow: /?*              # Block URL parameters
+User-agent: Yandex
+Disallow: /                 # Block Russian bot if not targeting that region
+
+User-agent: AhrefsBot
+Disallow: /                 # Block aggressive SEO crawlers
+
+User-agent: SemrushBot
+Disallow: /                 # Block if you don’t want competitors analyzing
+
+User-agent: MJ12bot
+Disallow: /                 # Block spammy crawler
+
+# End of robots.txt
